@@ -17,15 +17,7 @@
               <p class="uppercase_text">Service Helpline Call Us: </p>
               <a href="tel:61-1234-5678-09">(+977)9823645644/9860029202</a> </div>
   
-   <?php   if(strlen($_SESSION['login'])==0)
-	{
-?>
- <div class="login_btn"> <a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal">Login / Register</a> </div>
-<?php }
-else{
 
-echo"Welcome To SAWARI SERVICE";
- } ?>
           </div>
         </div>
       </div>
@@ -75,13 +67,14 @@ foreach($results as $result)
             </li>
           </ul>
         </div>
-        <div class="header_search">
-          <div id="search_toggle"><i class="fa fa-search" aria-hidden="true"></i></div>
-          <form action="#" method="get" id="header-search-form">
-            <input type="text" placeholder="Search..." class="form-control">
-            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-          </form>
-        </div>
+        <?php   if(strlen($_SESSION['login'])==0)
+	{
+?>
+ <div class="login_btn"> <a href="#loginform" class="btn btn-xs uppercase" data-toggle="modal" data-dismiss="modal">Login / Register</a> </div>
+<?php }
+else{
+echo '<span style="color: white; font-size: 15px;"> WELCOME TO SAWARI SERVICE </span>';
+ } ?>
       </div>
       <div class="collapse navbar-collapse" id="navigation">
         <ul class="nav navbar-nav">
