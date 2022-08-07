@@ -810,7 +810,7 @@ table thead th, table thead td {
 }
 .login_btn {
   display: inline-block;
-  margin-left: 10px;
+  margin-top: 18px;
   vertical-align: middle;
 }
 .circle_icon {
@@ -924,7 +924,7 @@ table thead th, table thead td {
 
 
 /*----------------------------------
-	2.1 Navigation & Dropdown Menu
+	2.1 Navigation & Dropdown Menu & Login/Register
 ------------------------------------------*/
 #navigation_bar {
   background: #111111 none repeat scroll 0 0;
@@ -4957,7 +4957,7 @@ h3 {
   margin:0 5px 0 0;
 }
 .login_btn {
-	margin:2px;
+	margin:18px;
 }
 .login_btn .btn.btn-xs {
 	font-size:10px;
